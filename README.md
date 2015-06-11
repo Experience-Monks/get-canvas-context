@@ -2,9 +2,9 @@
 
 [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 
-Creates a new HTML5 Canvas Context with the given dimensions and options. 
+Creates a new HTML5 Canvas Context with the given dimensions and options. Returns `null` if not supported.
 
-Supports `'webgl'`, `'webgl2'` and `'2d'`.
+Supports `'webgl'`, `'webgl2'` and `'2d'`, handles vendor prefixing, and runs in Node and the Browser.
 
 ## Install
 
