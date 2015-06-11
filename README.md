@@ -6,6 +6,12 @@ Creates a new HTML5 Canvas Context with the given dimensions and options.
 
 Supports `'webgl'`, `'webgl2'` and `'2d'`.
 
+## Install
+
+```sh
+npm install get-canvas-context --save
+```
+
 ## Example
 
 ```js
