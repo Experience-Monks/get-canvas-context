@@ -3,11 +3,13 @@ function getCanvasContext (type, opts) {
   if (typeof type !== 'string') {
     throw new TypeError('must specify type string')
   }
-  if (typeof document === 'undefined') {
-    return null // check for Node
-  }
 
   opts = opts || {}
+  
+  if (typeof document === 'undefined' && !opts.canvas) {
+    return null // check for Node
+  }
+  
   var canvas = opts.canvas || document.createElement('canvas')
   if (typeof opts.width === 'number') {
     canvas.width = opts.width
