@@ -1,6 +1,6 @@
 {
   "name": "get-canvas-context",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "gets canvas context by name",
   "main": "index.js",
   "license": "MIT",
