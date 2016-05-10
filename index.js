@@ -5,11 +5,11 @@ function getCanvasContext (type, opts) {
   }
 
   opts = opts || {}
-  
+
   if (typeof document === 'undefined' && !opts.canvas) {
     return null // check for Node
   }
-  
+
   var canvas = opts.canvas || document.createElement('canvas')
   if (typeof opts.width === 'number') {
     canvas.width = opts.width
